@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>UNCW Finance & Economics Research Seminar Series</title>
+  <meta name="author" content="Jacques Lu">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="UNCW Finance & Economics Research Seminar Series — Invited talks by leading scholars in finance and economics.">
+  <meta name="keywords" content="finance seminar, economics seminar, UNCW, Cameron School of Business, research talks">
+
+  <!-- Open Graph (used by LinkedIn, Slack, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="UNCW Finance & Economics Research Seminar Series" />
+  <meta property="og:description" content="UNCW Finance & Economics Research Seminar Series — Invited talks by leading scholars in finance and economics." />
+  <meta property="og:url" content="https://uncw-econfin-seminar.github.io/" />
+  
+  <style>
+    :root { --ink:#0f172a; --muted:#475569; --brand:#004b87; --bg:#ffffff; --card:#f8fafc; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; color:var(--ink); background:var(--bg); line-height:1.55; }
+    a { color:var(--brand); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    header { padding:20px 16px; border-bottom:1px solid #e5e7eb; background:var(--card); }
+    header h1 { margin:0; font-size:1.6rem; color:var(--brand); }
+    header p { margin:.25rem 0 0; color:var(--muted); font-size:.95rem; }
+	main {
+  	max-width: 100%;   /* take full window width */
+  	margin: 0 auto;
+  	padding: 24px 80px 40px;
+	}
+
+    .grid { display:grid; gap:16px; grid-template-columns:1fr; }
+	@media (min-width:900px) {
+  	.grid {
+    	grid-template-columns: 1fr 350px; /* Left grows, right stays 300px */
+  	}
+	}
+
+    .card { background:var(--card); border:1px solid #e2e8f0; border-radius:14px; padding:18px; }
+    h2 { margin:0 0 12px; font-size:1.2rem; }
+    .seminar { display:flex; flex-direction:column; gap:6px; padding:12px; border-radius:12px; background:#fff; border:1px solid #e2e8f0; }
+    .meta { color:var(--muted); font-size:.95rem; }
+    .tag { display:inline-block; font-size:.78rem; color:#fff; padding:2px 8px; border-radius:999px; margin-left:6px; }
+    .external { background:#2563eb; } /* Blue for external */
+    .internal { background:#6b7280; } /* Gray for internal */
+    ul.archive { list-style:none; padding:0; margin:0; }
+    ul.archive li { padding:10px 12px; border:1px solid #e2e8f0; border-radius:10px; background:#fff; margin-bottom:8px; }
+    .muted { color:var(--muted); }
+    footer { margin-top:28px; padding-top:16px; border-top:1px solid #e5e7eb; color:var(--muted); font-size:.9rem; text-align:center; }
+
+    .affiliation {
+      margin: 0;
+    font-size: 0.8rem;       /* smaller text */
+  font-style: italic;      /* subtle distinction */
+  color: #475569;          /* muted gray */
+  font-family: Georgia, serif; /* or another contrasting font */
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Finance & Economics Research Seminar Series</h1>
+  <p><a href="https://uncw.edu" target="_blank">University of North Carolina Wilmington</a> • <a href="https://uncw.edu/academics/colleges/csb/" target="_blank">Cameron School of Business</a> • <a href="https://uncw.edu/academics/colleges/csb/departments-schools/economics-finance/" target="_blank">Department of Economics and Finance</a> </p>
+</header>
+
+<main class="grid">
+  <!-- LEFT COLUMN -->
+  <section class="card">
+    <h2>Fall 2025</h2>
+
+    <article class="seminar">
+      <div>
+        <strong>Riccardo (Ric) Colacito</strong>, UNC Kenan-Flagler
+        <span class="tag external">External Research Seminar</span>
+    </div>
+    <div> 
+      <p class="affiliation">Professor of Finance and Sarah Graham Kenan Scholar</p>
+      </div>
+
+      <div class="meta">“TBA”</div>
+      <div class="meta">October 17, 2025 • Friday • Time/Room TBA</div>
+    </article>
+
+    <article class="seminar">
+      <div>
+        <strong>Daniel Soques</strong>, UNCW
+        <span class="tag internal">Internal Brownbag</span>
+      </div>
+      <div class="meta">“Housing Bubble Contagion Across U.S. Cities”</div>
+      <div class="meta">November 14, 2025 • Friday • Time/Room TBA</div>
+    </article>
+
+    <article class="seminar">
+      <div>
+        <strong>Will Damron</strong>, UNCW
+        <span class="tag internal">Internal Brownbag</span>
+      </div>
+      <div class="meta">“Selection Bias in Linked Census Data”</div>
+      <div class="meta">November 21, 2025 • Friday • Time/Room TBA</div>
+    </article>
+
+  </section>
+
+  <!-- RIGHT COLUMN -->
+  <aside class="card">
+    <h2>About the Series</h2>
+    <p>
+      The UNCW Finance & Economics Research Seminar Series brings together distinguished external scholars and our own faculty to share cutting-edge research, foster collaboration, and enhance the intellectual community within the Cameron School of Business. 
+
+      For questions, contact <a href="mailto:guettabim@uncw.edu">Mouhcine Guettabi</a>, <a href="mailto:luy@uncw.edu">Jacques Lu</a>, and <a href="mailto:lohi@uncw.edu">Isaac Loh</a>.
+    </p>
+  </aside>
+
+  <!-- FULL-WIDTH ARCHIVE -->
+  <section class="card" style="grid-column:1 / -1;">
+    <h2>Past Seminars</h2>
+    <p>No past seminars archived yet.</p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> University of North Carolina Wilmington — Department of Economics and Finance.
+  </footer>
+</main>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
